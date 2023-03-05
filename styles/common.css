@@ -1,0 +1,92 @@
+
+/* FLEX */
+
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.f-row {
+    flex-direction: row;
+}
+
+.f-column {
+    flex-direction: column;
+}
+
+.f-all {
+    flex: 1 1;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-center {
+    align-items: center;    
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.jutify-start {
+    justify-content: flex-start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;      
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+/* POSITION */
+
+.p-absolute {
+    position: absolute;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-static {
+    position: static;
+}
+
+.p-fixed {
+    position: fixed;
+}
+
+/* WIDTH / HEIGHT */
+
+.full-width-percent {
+    width: 100%;
+}
+
+.full-height-viewport {
+    height: 100vh;
+}
+
+.full-height-percent {
+    height: 100%;
+}
+
+/* SPACING */
+
+.pa-15 {
+    padding: 15px;
+}
