@@ -90,3 +90,9 @@
 .pa-15 {
     padding: 15px;
 }
+
+/* OTHER */
+
+.hidden {
+    overflow: hidden;
+}
