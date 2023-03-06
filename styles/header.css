@@ -10,9 +10,6 @@
 }
 
 #burger-links-container {
+    transition: all 0.2s ease-in-out;
     height: 0;
-}
-
-.show {
-    height: auto;
 }
