@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <base target="_blank">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./styles/root.css" />
+    <title>$Title$</title>
+</head>
+<body>
+<header id="header" style="background-color: #ffff;z-index: 10" class="header p-fixed full-width-percent d-flex f-column align-center hidden">
+    <div style="top: 0; max-width: 1280px;" class="full-width-percent d-flex f-row justify-between align-center">
+        <div style="padding: 0 15px;">
+            <p>logo</p>
+        </div>
+        <div style="padding: 0 5px;">
+            <button id="burger" class="burger-menu" onclick="toggleLinksContainer()">
+                <svg width="38" height="38" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 14H38" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M10 24H38" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M10 34H38" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div id="burger-links-container" class="full-width-percent d-flex f-column align-center">
+        <ul id="burger-links-list" style="padding: 0 15px;row-gap: 10px;max-width: 1280px; box-sizing: border-box;" class="d-flex f-column full-width-percent">
+            <li><a data-goto=".home-key" name="scroll-button" href="home.html" >Home</a></li>
+            <li><a href="projects.html" >Projects</a></li>
+            <li><a href="services.html" >Services</a></li>
+            <li><a href="press.html" >Press</a></li>
+        </ul>
+    </div>
+</header>
+<p style="top:65px;position: absolute;">
+services
+</p>
+<script type="text/javascript" src="./js/menu.js" ></script>
+</body>
+</html>

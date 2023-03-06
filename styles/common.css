@@ -1,4 +1,13 @@
 
+body {
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+}
+
+body::-webkit-scrollbar {
+    display: none !important;
+}
+
 /* FLEX */
 
 .d-flex {
@@ -95,4 +104,14 @@
 
 .hidden {
     overflow: hidden;
+}
+
+/* TYPOGRAPHY */
+
+.fs-40 {
+    font-size: 40px;
+}
+
+.t-transform-upper {
+    text-transform: uppercase;
 }

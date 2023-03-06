@@ -1,3 +1,8 @@
 @import url(normilize.css);
 @import url(common.css);
 @import url(header.css);
+
+#map {
+    width: calc( 100% - 30px);
+    height: 100%;
+}
