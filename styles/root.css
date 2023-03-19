@@ -1,6 +1,7 @@
 @import url(normilize.css);
 @import url(common.css);
 @import url(header.css);
+@import url(project.css);
 
 #map {
     width: calc( 100% - 30px);

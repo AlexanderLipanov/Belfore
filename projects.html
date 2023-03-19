@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./styles/root.css" />
     <title>$Title$</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
-<body>
+<body id="project-body" class="full-width-percent">
 <header id="header" style="background-color: #ffff;z-index: 10" class="header p-fixed full-width-percent d-flex f-column align-center hidden">
     <div style="top: 0; max-width: 1280px;" class="full-width-percent d-flex f-row justify-between align-center">
         <div style="padding: 0 15px;">
@@ -32,9 +33,55 @@
         </ul>
     </div>
 </header>
-<p style="top:65px;position: absolute;">
-    projects
-</p>
+<div class="d-flex f-column align-center">
+    <div style="margin-top: 100px;" class="full-width-percent d-flex f-column align-center">
+        <div style="max-width: 1280px;gap: 25px;flex-wrap: wrap;padding: 15px;" class="full-width-percent d-flex f-row align-center jutify-start">
+            <button onclick="openProject1()" style="padding: 0 0;" class="full-width-percent project-card d-flex f-column align-center justify-center">
+                <div class="full-width-percent hidden">
+                    <img alt="a" src="pictures/projects/testProject.jpg" class="full-width-percent full-height-percent" />
+                </div>
+                <div style="gap: 15px;padding: 15px;" class="d-flex f-column align-start">
+                    <p>Project 1</p>
+                </div>
+            </button>
+            <button onclick="openProject1()" style="padding: 0 0;" class="full-width-percent project-card d-flex f-column align-center justify-center">
+                <div class="full-width-percent hidden">
+                    <img alt="a" src="pictures/projects/testProject.jpg" class="full-width-percent full-height-percent" />
+                </div>
+                <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
+                    <p>Project 1</p>
+                </div>
+            </button>
+            <button onclick="openProject1()" style="padding: 0 0;" class="full-width-percent project-card d-flex f-column align-center justify-center">
+                <div class="full-width-percent hidden">
+                    <img alt="a" src="pictures/projects/testProject.jpg" class="full-width-percent full-height-percent" />
+                </div>
+                <div style="gap: 15px;  padding: 15px;" class="d-flex f-column align-start">
+                    <p>Project 1</p>
+                </div>
+            </button>
+            <button onclick="openProject1()" style="padding: 0 0;" class="full-width-percent project-card d-flex f-column align-center justify-center">
+                <div class="full-width-percent hidden">
+                    <img alt="a" src="pictures/projects/testProject.jpg" class="full-width-percent full-height-percent" />
+                </div>
+                <div style="gap: 15px;  padding: 15px;" class="d-flex f-column align-start">
+                    <p>Project 1</p>
+                </div>
+            </button>
+            <button onclick="openProject1()" style="padding: 0 0;" class="full-width-percent project-card d-flex f-column">
+                <div class="full-width-percent hidden">
+                    <img alt="a" src="pictures/projects/testProject.jpg" class="full-width-percent full-height-percent" />
+                </div>
+                <div style="gap: 15px;  padding: 15px;" class="d-flex f-column align-start">
+                    <p>Project 1</p>
+                </div>
+            </button>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<!--<script src="js/swiper.js"></script>-->
 <script type="text/javascript" src="./js/menu.js" ></script>
+<script type="text/javascript" src="./js/project.js" ></script>
 </body>
 </html>

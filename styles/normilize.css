@@ -362,3 +362,11 @@ li {
 p {
     margin: 0;
 }
+
+ul,li,div,p,a {
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
