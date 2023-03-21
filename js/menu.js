@@ -29,6 +29,7 @@ window.onload = function () {
         let scrollTop = window.pageYOffset;
         let sectionHome = document.getElementById("section-home");
         
+        if(sectionHome === null) {return;}
         sectionHome.style.height = window.screen.height - scrollTop - h + px;
     } 
 }

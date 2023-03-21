@@ -76,6 +76,8 @@ pre {
 a {
     background-color: transparent;
     cursor: pointer;
+    text-decoration: none;
+    color: #0a0a0a;
 }
 
 /**
@@ -178,7 +180,7 @@ button,
 input { /* 1 */
     overflow: visible;
     border: none;
-    background: none; 
+    background: none;
 }
 
 /**
@@ -200,6 +202,9 @@ button,
 [type="reset"],
 [type="submit"] {
     -webkit-appearance: button;
+    cursor: pointer;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 /**
@@ -365,8 +370,4 @@ p {
 
 ul,li,div,p,a {
     box-sizing: border-box;
-}
-
-button {
-    cursor: pointer;
 }
