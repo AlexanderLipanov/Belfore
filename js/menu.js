@@ -23,14 +23,15 @@ window.onload = function () {
     });
 
     let b = document.getElementById("header");
-    let h = b === undefined || b === null ? 65 : b.offsetHeight;
+    let h = b === undefined || b === null ? 44.39 : b.offsetHeight;
+    console.log("h", h);
     function onScroll() {
 
         let scrollTop = window.pageYOffset;
         let sectionHome = document.getElementById("section-home");
         
         if(sectionHome === null) {return;}
-        sectionHome.style.height = window.screen.height - scrollTop - h + px;
+        sectionHome.style.height = window.screen.height - scrollTop - h + px;       
     } 
 }
 
