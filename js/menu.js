@@ -47,6 +47,10 @@ if(scrollLinks.length > 0)
 
 function onScrollLinkClick(e) {
     const menuLink = e.target;
+
+    if(document.getElementById("page-1") === null 
+    || document.getElementById("page-1") === undefined) return;
+
     let d = document.getElementById("page-1").scrollTop;
     const gotoBlock = document.querySelector(menuLink.dataset.goto);
     let t = gotoBlock.getBoundingClientRect().top;

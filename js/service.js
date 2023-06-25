@@ -26,14 +26,17 @@ let swiperServiceContainers = document.getElementsByName("swiper-service-contain
 
 setSizeSwiperContainer();
 function setSizeSwiperContainer() {
-    
+
     let currentSize = generalContainer.clientWidth / 2;
+
+    if(window.screen.availWidth <= 580) {
+        currentSize = generalContainer.clientWidth - 10;
+    }    
 
     swiperServiceContainers.forEach(e => {
         
         e.style.width = currentSize + 'px';
-    });
-    
+    });    
 }
 
 window.addEventListener("resize", setSizeSwiperContainer);

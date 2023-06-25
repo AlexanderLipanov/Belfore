@@ -3,7 +3,7 @@ const projectId1 = "project-1";
 
 const projectBody = document.getElementById("project-body");
 
-let project1 = '<div id="project-1" style="z-index: 10; background-color: #fcfcfa;" class="p-absolute d-flex f-column align-center justify-center full-width-percent full-height-percent hidden">'
+let project1 = '<div id="project-1" style="z-index: 10; background-color: #fcfcfa;" class="p-fixed d-flex f-column align-center justify-center full-width-percent full-height-percent hidden">'
                     + '<div style="margin-top: 37px;" class="d-flex full-width-percent f-row justify-end align-center">'
                         + '<button style="padding: 15px 20px;" onclick={closeProject(projectId1)}>\n' 
                         + '<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">\n' 
@@ -33,8 +33,8 @@ let project1 = '<div id="project-1" style="z-index: 10; background-color: #fcfcf
                                 + '</div>'
     
                                 + '<div class="swiper-pagination"></div>'
-                                + '<div class="swiper-button-prev"></div>'
-                                + '<div class="swiper-button-next"></div>'
+                                + '<div class="swiper-button-prev swiper-projects-button"></div>'
+                                + '<div class="swiper-button-next swiper-projects-button"></div>'
                             + '</div>'
                         + '</div>'
                     + '</div>'
@@ -44,12 +44,13 @@ window.onload = function() {
 }
 
 function openProject1() {
+    projectBody.style.overflow = "hidden";
     projectBody.insertAdjacentHTML("afterbegin", project1);
     initSwiperProject1();
 }
 
 function closeProject(projectId) {
-    
+    projectBody.style.overflow = "auto";
     let p = document.getElementById(projectId);
     projectBody.removeChild(p);
 }
